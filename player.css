@@ -1,0 +1,443 @@
+
+/* Universal Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+
+/* Body */
+body{
+    color: whitesmoke;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #0c1027;
+    /* background: linear-gradient(#0a0d20, #0d132e); #091335 0f0725*/
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Logo Container */
+.logo-container{
+    width: 20%;
+    height: auto;
+}
+
+/* Logo Image */
+.logo-container img{
+    width: 40%;
+    height: auto;
+    padding: 10px 0 10px 10px;
+}
+
+/* Logo Image Span */
+.logo-container span{
+    position: absolute;
+    font-size: large;
+    top: 40px;
+}
+
+/* Fav container */
+.fav-container{
+    width: 30%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* Fav span */
+.fav-container span{
+    font-family: sans-serif;
+}
+
+/* Searchbar container */
+.search-bar{
+    width: 30%;
+    text-align: right;
+    padding-top: 40px;
+}
+
+/* Searchbar input */
+.search-bar input{
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #1F2041;
+}
+
+/* BellIcon container */
+.bell-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BellIcon image */
+.bell-icon img{
+    margin-top: 40px;
+    height: auto;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* User Image Container */
+.user-img{
+    width: 15%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* User image */
+.user-img img{
+    width: 40%;
+    height: auto;
+}
+
+/* Main */
+.main-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Section */
+.section{
+    width: 60%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+/* Poster container */
+.poster{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* padding: 10px; */
+}
+
+.poster-over{
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+
+.poster>img:hover{
+    transform: scale(1.02);
+}
+
+.poster-over:hover{
+    transform: scale(1.05);
+}
+
+/* Poster Image */
+.poster img{
+    width: 40%;
+    height: auto;
+}
+
+/* Poster Top Image  */
+.poster-over img{
+    width: 70%;
+    height: auto;
+}
+
+/* Poster Borders */
+.poster-border{
+    border-radius: 5px;
+}
+
+/* Latest songs conatainer */
+.latest{
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.latest h4{
+    width: 100%;
+}
+
+.latest-song{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.latest-song div{
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.latest-song div:first-child{
+    padding-left: 0;
+}
+
+.latest-song div img{
+    width: 100px;
+    height: 100px;
+}
+
+/* Popular Artists */
+.artists{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.artists div:first-child{
+    width: 100%;
+}
+
+.artists div a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.artists div a img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.artists div p{
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Song Types */
+.song-type{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.song-type div{
+    width: 30%;
+    height: auto;
+}
+
+.song-type div img{
+    height: 150px;
+    width: auto;
+}
+
+.song-type div p{
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Latest English */
+.latest-eng{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest-eng div:first-child{
+    width: 100%;
+}
+
+.latest-eng div img{
+    width: 100px;
+    height: 100px;
+}
+
+.latest-eng div p{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* Aside */
+.aside-sec{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.similar-artists{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.similar-artists h4{
+    width: 100%;
+}
+
+.solo-artist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.song-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.serial p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.song-img-container{
+    margin: 5px 2px 2px 10px;
+}
+
+.song-img-container img{
+    height: 50px;
+    width: 50px;
+}
+
+.song-des{
+    margin: 0 15px;
+}
+
+.song-des h5{
+    font-size: 20px;
+}
+
+.song-des p{
+    font-size: 10px;
+}
+
+.heart-container{
+    margin-left: 100px;
+}
+
+.heart-container img{
+    height: 20px;
+    width: 20px;
+}
+
+
+/* Artist Page */
+.about-artist{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: linear-gradient(#151b3c,#11035e) 
+
+}
+
+.about-artist div {
+    width: 50%;
+    height: auto;
+}
+
+.about-artist div img{
+    height: 300px;
+    width: 100%;
+}
+.artist-detail h3{
+    margin: 20px 5px 5px 10px;
+}
+
+.artist-detail p{
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+}
+
+.artist-detail button{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 2px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(108, 21, 238),rgb(221, 12, 224));
+}
+
+.about-artist div button span{
+    font-size: large;
+    color: whitesmoke;
+}
+
+.artist-song{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.artist-song-container{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #15182a;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* Play Part */
+.play{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #282828;
+}
+
+.play audio{
+    width: 30%;
+    margin: auto;
+}
